@@ -1,15 +1,21 @@
-# simulator
+# Wrum-wrum
 
-To install dependencies:
-
-```bash
-bun install
-```
-
-To run:
+## Getting started
 
 ```bash
-bun run index.ts
+$ go mod tidy
+$ bun install
 ```
 
-This project was created using `bun init` in bun v1.2.9. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+## Running projects
+
+```bash
+# CLI Mode
+$ go run ./cmd/cli
+
+# Run server
+$ air
+
+# Compile static assets
+$ bun compile
+```
