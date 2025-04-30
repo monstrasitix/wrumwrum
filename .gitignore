@@ -5,7 +5,8 @@ node_modules
 out
 tmp
 dist
-static
+static/css
+static/scripts
 static/scripts
 *.tgz
 

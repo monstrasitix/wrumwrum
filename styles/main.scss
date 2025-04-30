@@ -21,3 +21,27 @@
 .--h-100 {
   height: 100%;
 }
+
+.wallpaper {
+  position: relative;
+
+  &-image,
+  &-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-content {
+    z-index: 10;
+    background-color: rgba(rgb(27, 27, 134), 0.5);
+  }
+
+  &-image {
+    z-index: 0;
+    display: block;
+    object-fit: cover;
+  }
+}

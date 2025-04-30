@@ -15,7 +15,7 @@ body {
     &,
     &::before,
     &::after {
-      box-sizing: inherits;
+      box-sizing: inherit;
     }
   }
 }
