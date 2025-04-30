@@ -1,0 +1,13 @@
+@use "../abstract/border";
+@use "../abstract/color";
+@use "../abstract/spacing";
+
+.card {
+  border-radius: border.$radius;
+  overflow: hidden;
+
+  &-body {
+    background-color: color.$white;
+    padding: spacing.$p1;
+  }
+}

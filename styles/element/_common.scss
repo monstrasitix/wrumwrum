@@ -1,0 +1,17 @@
+@use "../abstract/font";
+@use "../abstract/spacing";
+
+%control {
+  font: {
+    size: font.$control-size;
+    family: font.$control-family;
+  }
+
+  line-height: inherit;
+
+  padding: spacing.$control-padding;
+  border-radius: 5px;
+
+  white-space: nowrap;
+  vertical-align: middle;
+}

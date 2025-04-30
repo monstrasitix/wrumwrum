@@ -1,0 +1,5 @@
+@use "./color";
+
+$radius: 10px !default;
+
+$control: 1px solid color.$border;

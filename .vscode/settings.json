@@ -1,0 +1,10 @@
+{
+  "editor.rulers": [80, 120],
+  "editor.formatOnSave": true,
+  "[go-template]": {
+    "editor.defaultFormatter": "jinliming2.vscode-go-template"
+  },
+  "files.associations": {
+    "*.go.tpl": "html"
+  }
+}

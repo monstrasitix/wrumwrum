@@ -1,0 +1,9 @@
+@use "../../abstract/font";
+
+.label {
+  font-size: font.$control-size;
+
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: block;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "simulator",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "compile": "bun sass --watch; bun ts --watch",
+    "sass": "sass ./styles:./static/css --style=compressed",
+    "ts": "tsc --outDir ./static/scripts"
+  },
+  "dependencies": {
+    "three": "^0.175.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/three": "^0.175.0",
+    "sass": "^1.87.0",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

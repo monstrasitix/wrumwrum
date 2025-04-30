@@ -1,0 +1,31 @@
+@use "./common" as *;
+
+@use "../abstract/color";
+@use "../abstract/border";
+@use "../abstract/transition";
+
+.button {
+  @extend %control;
+
+  border: 0;
+  cursor: pointer;
+  border-radius: border.$radius;
+
+  text-align: center;
+  text-decoration: none;
+
+  @include transition.ease(background-color, box-shadow);
+
+  &.-primary {
+    color: color.$on-dark-text;
+    background-color: color.$primary;
+
+    &:hover {
+      background-color: color.$primary-hover;
+    }
+
+    &:active {
+      background-color: color.$primary-active;
+    }
+  }
+}

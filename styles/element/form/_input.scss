@@ -1,0 +1,10 @@
+@use "../common" as *;
+@use "../../abstract/color";
+@use "../../abstract/border";
+
+.input {
+  @extend %control;
+
+  background-color: color.$white;
+  border: border.$control;
+}
