@@ -1,3 +1,4 @@
+import { BarChart } from "@/charts/bar";
 import { SVGRenderer } from "@/renderer/svg";
 
 document.addEventListener("DOMContentLoaded", function (this: Document) {
@@ -10,9 +11,6 @@ document.addEventListener("DOMContentLoaded", function (this: Document) {
   renderer.mount(target);
   renderer.size = [800, 600];
 
-  renderer.fill = "red";
-  renderer.rectangle(10, 10, 200, 200);
-
-  renderer.fill = "orange";
-  renderer.circle(100, 100, 50);
+  const chart = new BarChart(renderer);
+  chart.draw();
 });

@@ -1,6 +1,9 @@
 export interface IRenderer {
   mount(target: HTMLElement): void;
 
+  fill: string | null;
+  stroke: string | null;
+
   get size(): [number, number];
   set size(dimensions: [number, number]);
 
