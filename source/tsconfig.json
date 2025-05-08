@@ -1,10 +1,8 @@
 {
-  "extends": "../tsconfig.json",
+  "extends": "../tsconfig.base.json",
   "compilerOptions": {
     "lib": ["ES2023", "DOM"],
-    "module": "CommonJS",
-    "target": "ES2015",
-    "outDir": "./static/scripts"
+    "outDir": "./static/scripts",
+    "target": "ES2015"
   },
-  "include": ["./*"]
 }

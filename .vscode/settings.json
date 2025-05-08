@@ -1,10 +1,21 @@
 {
   "editor.rulers": [80, 120],
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[go-template]": {
-    "editor.defaultFormatter": "jinliming2.vscode-go-template"
+    "editor.formatOnSave": false
+  },
+  "go-template.patterns": ["**/*.go.tpl"],
+  "gopls": {
+    "formatting.gofumpt": true
   },
   "files.associations": {
-    "*.go.tpl": "html"
-  }
+    "**/*.go.tpl": "html"
+  },
+  "cSpell.words": [
+    "TPMS"
+  ]
 }

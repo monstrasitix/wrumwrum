@@ -28,4 +28,21 @@
       background-color: color.$primary-active;
     }
   }
+
+  &.-secondary {
+    color: color.$primary;
+    background-color: transparent;
+
+    &:hover {
+      background-color: rgba(color.$primary, 0.2);
+    }
+
+    &:active {
+      background-color: rgba(color.$primary, 0.4);
+    }
+  }
+
+  &.-sm {
+    padding: 0.5rem;
+  }
 }

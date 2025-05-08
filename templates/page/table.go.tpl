@@ -2,6 +2,8 @@
 
 {{define "body"}}
 <div class="container -page">
-  <h1>Welcome</h1>
+  <div style="margin-top: 5rem"></div>
+
+  {{template "table" .Table}}
 </div>
 {{end}}

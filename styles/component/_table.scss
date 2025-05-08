@@ -1,0 +1,51 @@
+@use "../abstract/color";
+@use "../abstract/border";
+@use "../abstract/font";
+
+.table {
+  overflow: scroll;
+  border: border.$table;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  
+    th,
+    td {
+      padding: 1.2rem;
+      font-family: font.$family;
+      text-align: left;
+      word-wrap: nowrap;
+      white-space: nowrap;
+  
+      &.-numeric {
+        text-align: right;
+      }
+    }
+  
+    th {
+      font-weight: bold;
+      min-width: 200px;
+    }
+  
+  
+    thead tr {
+      outline: border.$table;
+    }
+  
+    tbody tr {
+      border-bottom: border.$table;
+    }
+  
+    thead,
+    tbody {
+      background-color: color.$white;
+      width: 100%;
+    }
+  
+    thead {
+      position: sticky;
+      top: 0px;
+    }
+  }
+}
